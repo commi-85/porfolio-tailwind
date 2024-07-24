@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>profolio Tailwind</title>
+
+</head>
+<!--  Ce que vous visez
+
+    Exercice de point de contrôle CSS Tailwind
+    Aperçu du projet :
+    Créez une page Web pour votre portfolio personnel à l’aide de Tailwind CSS. Cet exercice se concentrera sur
+    l’application de diverses classes Tailwind pour structurer la mise en page, styliser les composants et rendre la
+    page Web réactive.-->
+<!-- 
+    Exigences:-->
+
+<body class="bg-indigo-300">
+    <!--Section d’en-tête :
+Concevez un en-tête avec votre nom et un menu de navigation (au moins trois éléments : Accueil, Projets, Contact).
+Utilisez les classes Tailwind pour le style et la réactivité. -->
+    <header class="text-center rounded-lg bg-indigo-950 text-amber-50">
+        <h1>
+            <div class="text-zinc-600 
+            font-black text-5xl bg-gradient-to-l hover:bg-gradient-to-r">
+                ARONA SANGHARE
+            </div>
+        </h1>
+        <nav class="flex sm:flex-col md:flex-row md: justify-between  bg-[url('image/fondHeader1.jpg')]">
+
+            <!-- ... -->
+            <div class="max-[640px]: flex justify-center ">
+                <img src="image/mon profile retouche.png" alt=" ma photo" class="rounded-full">
+            </div>
+            <div class="text-right font-sans hover:font-serif text-gry-800 text-2xl ">
+                <button class="rounded-full bg-blue-500 m-4">
+                    <a href="#">ACCUEIL</a>
+                </button>
+                <button class="rounded-full bg-blue-500 m-4">
+                    <a href="#PROPOS">A PROPOS</a>
+                </button>
+                <button class="rounded-full bg-blue-500 m-4">
+                    <a href="#TRAVAIL">PROJETS</a>
+                </button>
+                <button class="rounded-full bg-blue-500 m-4">
+                    <a href="#CV">CV</a>
+                </button>
+                <button class="rounded-full bg-blue-500 m-4">
+                    <a href="#CONTACT">CONTACT</a>
+                </button>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="PROPOS">
+            <!-- Section des héros :
+    Créez une section héros avec une image d’arrière-plan et un titre vous présentant.
+    Appliquez des classes Tailwind pour l’alignement du texte, la taille du texte et la marge/le remplissage.-->
+            <div>
+                <div>
+                    <h3 class="text-2xl">
+                        <span class="underline">A PROPOS</span>: <!--MES ATOUTS -->
+                    </h3>
+                    <div>
+                        <ul class="text-2xl font-mono flex justify-between  md:flex-row sm:flex-col ">
+                            <div class="flex items-center">
+                                <img src="logo/dynamique.png" alt="dynamique" class="size-[40px] m-[10px]">
+                                <li>DYNAMIQUE</li>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="logo/reactif.webp" alt="dynamique" class="size-[40px] m-[10px]">
+                                <li>REACTIF</li>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="logo/espritDequipe.jpg" alt="dynamique" class="size-[40px] m-[10px]">
+                                <li>ESPRIT D'EQUIPE</li>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="logo/perseverant2.jpeg" alt="dynamique" class="size-[40px] m-[10px]">
+                                <li>PERSEVERANT</li>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="flex sm:flex-col md:flex-row md: justify-between m-[10px]">
+                    <div class="w-[100%]">
+                        <p class="text-xl text-justify">
+                            Assistant dans la Division Administration Gestion Infrastructure (DAGI) à la Direction
+                            Générale de
+                            la
+                            Protection Judiciaire et Sociale (DGPJS), mon travail est axé sur la gestion des crédits
+                            alloués à
+                            la
+                            direction centrale et d'apporter une assitance aux services deconcentrés dans execution des
+                            procedures de passation de marché .
+                        </p>
+                    </div>
+                    <div class="w-[100%] m-[10px]">
+                        <video height="300px" width="700px" src="video/monBio.mp4" controls autoplay>
+                        </video>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <div class="m-[10px]">
+            <section id="TRAVAIL">
+                <h3 class="text-2xl">
+                    <span class="underline">PROJETS</span> :
+                </h3>
+                <div class="flex">
+                    <div class="flex">
+                        <div> <!--projet 1: ameliorer la base de donnée de la DGPJS -->
+                            <div class="flex my-[15px] mx-[15px] sm:flex-col md:flex-row md: justify-between m-[10px]">
+                                <div class="w-[50%]">
+                                    <img src="image/BaseDeDonnee.jpeg" alt="BD" class="size-[100%]">
+                                </div>
+                                <p class="text-xl text-justify">
+                                    <span class="font-black underline">BASE DE DONNEE</span> <br>
+                                    Doter la direction Générale de protection judiciaire et sociale
+                                    un outil informatique réactive et adaptée aux exigences du secteur faisant office de
+                                    base de donnée.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <!--projet 2: le ranger SANGHARE -->
+                            <div class="flex my-[15px] mx-[15px] sm:flex-col md:flex-row md: justify-between m-[10px]">
+                                <div class="w-[50%]">
+                                    <img src="logo/mon logo.png" alt="SANGHARE ET FRERE" class="w-[100%]">
+                                </div>
+                                <p class="text-xl text-justify">
+                                    Creer un grand ferme moderne et conventionnel pour l'amelioration de la race
+                                    d'abord,puis implanté une unité de distribution de produits animal et enfin elaborer
+                                    un reseau de maillage par des point de vente stratégique pour une bonne distribution
+                                    des produits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        </div>
+        <div class=" flex h-[400px] justify-end">
+            <!--utiliser une formulaire pour les contacte -->
+            <section id="CONTACT">
+                <h3 class="text-2xl text-center font-mono font-bold subpixel-antialiased">
+                    <span class="underline">CONTACT</span>:
+                </h3>
+                <div>
+                    <form class="text-xl">
+                        <div class="flex my-[10px] justify-between">
+                            <div class="flex justify-between">
+                                <label for="Nom"> <span class="underline">Nom</span>:</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <label><span class="underline">Prénom</span>:</label>
+                                <input type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="flex my-[10px] justify-between">
+                            <div class="flex justify-between ">
+                                <label><span class="underline">N° Téléphone</span>:</label>
+                                <input type="number"class="flex my-[1px]">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <label><span class="underline">Email</span>:</label>
+                                <input type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="flex justify-stretch">
+                            <label><span class="underline">Message</span>:</label>
+                            <input type="text" class="h-[230px] w-[600px]">
+                        </div>
+                        <div>
+                            <button class="rounded-full ml-[83px] bg-blue-500 w-[600px] text-center">
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+        </div>
+        </section>
+        </div>
+    </main> <br>
+    <footer class="text-xs text-center font-mono font-bold subpixel-antialiased text-white bg-indigo-950">
+
+        221 78 103 98 00 <br>
+        sangharearona@gmail.com <br>
+        2920 Pikine Tally Bou Bess .Dakar .SENEGAL
+
+        <div>
+            <p>
+                © Copyright 2024 tous droits réservés
+            </p>
+        </div>
+        <div class="flex justify-center">
+            <div class="my-[5px] mx-[5px]">
+                <img src="logo/facebook.png" alt="facebook" class="size-[35px]">
+            </div>
+            <div class="my-[5px] mx-[5px]">
+                <img src="logo/Instagram_icon.png.webp" alt="intagrm" class="size-[35px]">
+            </div>
+            <div class="my-[5px] mx-[5px]">
+                <img src="logo/linked.png" alt="linked" class="size-[35px]">
+            </div>
+            <div class="my-[5px] mx-[5px]">
+                <img src="logo/twitter.jpg" alt="twitter" class="size-[35px]">
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
